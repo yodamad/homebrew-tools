@@ -5,27 +5,51 @@
 class Heimdall < Formula
   desc ""
   homepage "https://github.com/yodamad/heimdall"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   depends_on "git"
   depends_on "zsh" => :optional
-  depends_on :macos
 
-  url "https://github.com/yodamad/heimdall/releases/download/0.0.3/heimdall_Darwin_x86_64.tar.gz"
-  sha256 "ee873c82abb781e94fd741b159d7d7c20c3027cc4b0874abe3aff6cdf6c1c90f"
+  on_macos do
+    on_intel do
+      url "https://github.com/yodamad/heimdall/releases/download/0.0.4/heimdall_Darwin_x86_64.tar.gz"
+      sha256 "cf4ef74211846712750c6407db311e44a169af5df170da255b0e9683b2a5c3bc"
 
-  def install
-    bin.install "heimdall"
+      def install
+        bin.install "heimdall"
+      end
+    end
+    on_arm do
+      url "https://github.com/yodamad/heimdall/releases/download/0.0.4/heimdall_Darwin_arm64.tar.gz"
+      sha256 "2c22f91e2dbff13b3327df9caceda8bc0dd7a0740eb829c4ad4a0a20d30d34cd"
+
+      def install
+        bin.install "heimdall"
+      end
+    end
   end
 
-  on_arm do
-    def caveats
-      <<~EOS
-        The darwin_arm64 architecture is not supported for the Heimdall
-        formula at this time. The darwin_amd64 binary may work in compatibility
-        mode, but it might not be fully supported.
-      EOS
+  on_linux do
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/yodamad/heimdall/releases/download/0.0.4/heimdall_Linux_x86_64.tar.gz"
+        sha256 "4533e67e6a82d1801bf57793e956cbdb2437daf52f6eba46e2dccfebd2f498a7"
+
+        def install
+          bin.install "heimdall"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/yodamad/heimdall/releases/download/0.0.4/heimdall_Linux_arm64.tar.gz"
+        sha256 "72641087953ae2b37d9f1a43eafe2ed881f5150335d89b4cd6a585eeae7d6dd2"
+
+        def install
+          bin.install "heimdall"
+        end
+      end
     end
   end
 end
