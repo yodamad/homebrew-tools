@@ -5,7 +5,7 @@
 class Heimdall < Formula
   desc ""
   homepage "https://github.com/yodamad/heimdall"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Heimdall < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/yodamad/heimdall/releases/download/0.2.0/heimdall_Darwin_x86_64.tar.gz"
-      sha256 "ecbc0f72b2f940f7135ac52e673e10d7aca338d9c39f6bbc1a3473349806dc42"
+      url "https://github.com/yodamad/heimdall/releases/download/0.2.1/heimdall_Darwin_x86_64.tar.gz"
+      sha256 "7391f7253171bba1cf7127c39f3d5f8ab1277603362184163b2121847a5e500e"
 
       def install
         bin.install "heimdall"
       end
     end
     on_arm do
-      url "https://github.com/yodamad/heimdall/releases/download/0.2.0/heimdall_Darwin_arm64.tar.gz"
-      sha256 "1eab78b7f14596cf27cadde075557a7e33f4f8b739071a71257919b0f3c988f0"
+      url "https://github.com/yodamad/heimdall/releases/download/0.2.1/heimdall_Darwin_arm64.tar.gz"
+      sha256 "b70fc7a3502c1a401b94afce8290bbe874f81faf7548299e6049857355a382ac"
 
       def install
         bin.install "heimdall"
@@ -33,8 +33,8 @@ class Heimdall < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yodamad/heimdall/releases/download/0.2.0/heimdall_Linux_x86_64.tar.gz"
-        sha256 "e980145ef7fea1e72e4bad8d647e3692d428992c22e6cabcfc25c792e3ecddea"
+        url "https://github.com/yodamad/heimdall/releases/download/0.2.1/heimdall_Linux_x86_64.tar.gz"
+        sha256 "abd13b3b85d88beb7d87f39a8d27b4abc8ecda84cc3b2f6e7e8cd7d497b9c023"
 
         def install
           bin.install "heimdall"
@@ -43,8 +43,8 @@ class Heimdall < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yodamad/heimdall/releases/download/0.2.0/heimdall_Linux_arm64.tar.gz"
-        sha256 "c497377a39bf260c86979e2c50d755ca1d6b196ea53ae1931be8fcae8d2751ad"
+        url "https://github.com/yodamad/heimdall/releases/download/0.2.1/heimdall_Linux_arm64.tar.gz"
+        sha256 "3fae26597cbe8b4956de48612dac69e75a79f4c8e2059d8fbb4cc10090aa233b"
 
         def install
           bin.install "heimdall"
