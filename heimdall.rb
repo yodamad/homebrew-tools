@@ -14,7 +14,7 @@ class Heimdall < Formula
   on_macos do
     on_intel do
       url "https://github.com/yodamad/heimdall/releases/download/v0.2.3/heimdall_Darwin_x86_64.tar.gz"
-      sha256 "29fba7c9b79dcb11fc23dab01584ba2bd02b1a8ccf1c033427ad70e2fd80fc27"
+      sha256 "70307e8527c17e8c9fd4a66a077fdb67a9936ce65277d20787adaca4b5cf8008"
 
       def install
         bin.install "heimdall"
@@ -22,7 +22,7 @@ class Heimdall < Formula
     end
     on_arm do
       url "https://github.com/yodamad/heimdall/releases/download/v0.2.3/heimdall_Darwin_arm64.tar.gz"
-      sha256 "d43af36ae5f98649d18505a0cb990bca6de478e403a0aa046cbf37bdc1d90bdd"
+      sha256 "552629209862afc1c8c7ec8ed3ae5961fb18f0e5876c800fa28b3608dc5a9fb0"
 
       def install
         bin.install "heimdall"
@@ -34,7 +34,7 @@ class Heimdall < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/yodamad/heimdall/releases/download/v0.2.3/heimdall_Linux_x86_64.tar.gz"
-        sha256 "4ea678286b6f21f8ae07dc8f98784593963ed4cb99063ee9547df02f07596624"
+        sha256 "49d23f318e59929a6b89d66b972fd3b653ea3e37aad276cdd250fd3ff1edd049"
 
         def install
           bin.install "heimdall"
@@ -44,7 +44,7 @@ class Heimdall < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/yodamad/heimdall/releases/download/v0.2.3/heimdall_Linux_arm64.tar.gz"
-        sha256 "dba8caf0100c55b80eb9baa4adc5a7b65419afdaa677144c191eff2aaa69a53a"
+        sha256 "56a52ad85e286075f74da36d828c7b496dc42ecf8ddc662b2b7ec2c26f377f11"
 
         def install
           bin.install "heimdall"
