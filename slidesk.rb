@@ -5,7 +5,7 @@
 class Slidesk < Formula
   desc ""
   homepage "https://github.com/yodamad/slidesk"
-  version "0.4.0"
+  version "99.2"
   license "MIT"
 
   depends_on "git"
@@ -13,8 +13,8 @@ class Slidesk < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yodamad/heimdall/releases/download/0.4.0/heimdall_Darwin_x86_64.tar.gz"
-      sha256 "9024fcdb1559f900cb1cc505c1534e82a092d2530ce9486ff7b39990543b3af6"
+      url "https://github.com/yodamad/slidesk-fork/releases/download/0.3/release_Darwin_arm64.tar.gz"
+      sha256 "12345678901234567890"
 
       def install
         bin.install "heimdall"
