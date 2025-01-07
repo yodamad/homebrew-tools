@@ -8,7 +8,7 @@ class Slidesk < Formula
   version "0.4.0"
   license "MIT"
 
-  MAC_AMD_URL "https://github.com/yodamad/heimdall/releases/download/0.4.0/heimdall_Darwin_x86_64.tar.gz"
+  MAC_AMD_URL="https://github.com/yodamad/heimdall/releases/download/0.4.0/heimdall_Darwin_x86_64.tar.gz"
 
   depends_on "git"
   depends_on "zsh" => :optional
