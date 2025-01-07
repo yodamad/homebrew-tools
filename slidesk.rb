@@ -15,7 +15,7 @@ class Slidesk < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url MAC_AMD_UR
+      url MAC_AMD_URL
       sha256 "9024fcdb1559f900cb1cc505c1534e82a092d2530ce9486ff7b39990543b3af6"
 
       def install
