@@ -2,8 +2,8 @@ class Slidesk < Formula
     desc "Speaker companion"
     homepage "https://github.com/gouz/homebrew-tools"
 
-    version "2.10.1"
-    BASE_URL = "https://github.com/gouz/slidesk/releases/download/#{version}"
+    version "0.11"
+    BASE_URL = "https://github.com/yodamad/slidesk-fork/releases/download/#{version}"
 
     MAC_ARM_SHA = "4e105209211f6dc6f2d5325f5a872aa751b1e9a7b24851b584be35b02b8705ce"
     MAC_AMD_SHA = "738efe5ab5753d56b35b0562fb4c0a807f7bda3dde0e72a5ec3911d12944356d"
