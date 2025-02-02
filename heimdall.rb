@@ -5,7 +5,7 @@
 class Heimdall < Formula
   desc ""
   homepage "https://github.com/yodamad/heimdall"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Heimdall < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yodamad/heimdall/releases/download/v0.5.3/heimdall_Darwin_x86_64.tar.gz"
-      sha256 "686682b202de6db68bc63c19b0c3597c5e318eb5803f01c4bacf645dede1083e"
+      url "https://github.com/yodamad/heimdall/releases/download/v0.5.4/heimdall_Darwin_x86_64.tar.gz"
+      sha256 "af753de70a84a157ad36b5d262bcb05cb1699c2d61be959728b96386f888ae5e"
 
       def install
         bin.install "heimdall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yodamad/heimdall/releases/download/v0.5.3/heimdall_Darwin_arm64.tar.gz"
-      sha256 "460d21a758f61dc1d1fa0e5685981e9eda30fb79b28966e677525de5889d1248"
+      url "https://github.com/yodamad/heimdall/releases/download/v0.5.4/heimdall_Darwin_arm64.tar.gz"
+      sha256 "a5c3b13f34f0bb27298b373df39a22ef203e96d4c8f9640e9c2dfbdccbb463b8"
 
       def install
         bin.install "heimdall"
@@ -33,8 +33,8 @@ class Heimdall < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yodamad/heimdall/releases/download/v0.5.3/heimdall_Linux_x86_64.tar.gz"
-        sha256 "c78c3b63a4b60e9dd89ae4662ac9c690fd8802636eff8ca03368f659598e0954"
+        url "https://github.com/yodamad/heimdall/releases/download/v0.5.4/heimdall_Linux_x86_64.tar.gz"
+        sha256 "f21ae4ddb94d0b75a88f9f197a479a6bd1f8c56317f2b741ed00b81addc6993f"
 
         def install
           bin.install "heimdall"
@@ -43,8 +43,8 @@ class Heimdall < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yodamad/heimdall/releases/download/v0.5.3/heimdall_Linux_arm64.tar.gz"
-        sha256 "65278ae3cfbbcc05066c254483bc4c710d721c5f775ffddb7201a03e58136518"
+        url "https://github.com/yodamad/heimdall/releases/download/v0.5.4/heimdall_Linux_arm64.tar.gz"
+        sha256 "85818897efc656a12b9bec4731b73b5fffdca0afb13ee1fb50195e8eba577f8a"
 
         def install
           bin.install "heimdall"
