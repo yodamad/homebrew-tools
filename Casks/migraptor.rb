@@ -3,7 +3,7 @@ cask "migraptor" do
   name "migraptor"
   desc ""
   homepage "https://github.com/yodamad/migraptor"
-  version "0.6.0"
+  version "0.6.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "migraptor" do
   on_macos do
     on_intel do
       url "https://github.com/yodamad/migraptor/releases/download/#{version}/migraptor_Darwin_x86_64.tar.gz"
-      sha256 "97730e4b2b0145a03019acbadc8d7d3596eceb1f05a851f52c13f1a6c52c56c7"
+      sha256 "8b33299866fa4500abb426b68b6999e2e2b8df0c554d14a31bb3fe30bc7c190e"
     end
     on_arm do
       url "https://github.com/yodamad/migraptor/releases/download/#{version}/migraptor_Darwin_arm64.tar.gz"
-      sha256 "f82595dc8dd94f2770bd3d23f249059dc14cfa3925be9e6024e0d684f36bb8f2"
+      sha256 "7e24306140183c1f26f1d1938ee2867a314c6cf2332906cd36d361679cc91165"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/yodamad/migraptor/releases/download/#{version}/migraptor_Linux_x86_64.tar.gz"
-      sha256 "fc3e4d2b065e59a3c8b699b3d188adbd83174941eab274c004ce4a7249836d4b"
+      sha256 "ec5a8cc2665756474a6eb157fa7396f95d1fdbc4f7f8cb58b9de6dbe7f3e9e70"
     end
     on_arm do
       url "https://github.com/yodamad/migraptor/releases/download/#{version}/migraptor_Linux_arm64.tar.gz"
-      sha256 "2dff5b516cb0536a85f92c291ffbd1da5da2c2fde71f0145629cc2b47ff884c6"
+      sha256 "cf912f8ed0742fb0471990162b7393cc6f64d6f6a6f402f5853c5ca2de6528aa"
     end
   end
 
